@@ -15,11 +15,35 @@ body {
   justify-content: center;
 }
 
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+  gap: 0.5em;
+}
+
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  padding: 16px 16px 16px 0;
+}
+
+.header {
+  font-size: 1.3em;
+  font-weight: 800;
 }
 
 .icon {
@@ -33,6 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 16px 16px 16px;
 }
 
 .close-button {
@@ -51,6 +76,7 @@ body {
 button {
   padding: 8px 16px;
   border-radius: 8px;
+  font-family: Roboto, sans-serif;
 }
 
 button.continue {
